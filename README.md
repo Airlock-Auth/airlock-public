@@ -58,9 +58,9 @@ Airlock is a mechanism to register a number into your own private database. You 
       CREATE TABLE table_one (
         id SERIAL PRIMARY KEY,
         created_at TIMESTAMPTZ DEFAULT now(),
-        phone_numbe TEXT,
+        phone_number TEXT,
         email TEXT,
-        full_number_d JSONB,
+        full_number_details JSONB,
         region TEXT
       );
       ```
