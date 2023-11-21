@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'roxale';
+  src: url('/fonts/roxale.otf') format('opentype');
+}
+
+.custom-font-roxale {
+  font-family: 'roxale', sans-serif;
+}
+
+
+.indent-messages {
+  margin-left: 20px;
+}
+
+.gradient-line {
+  height: 2px; /* Adjust the thickness of the line here */
+  width: 30%; /* Adjust the width of the line here */
+  background: linear-gradient(to right, transparent, #000, transparent);
+}
+
+.message-body {
+  word-wrap: break-word;
+  max-width: 100ch; /* 'ch' unit represents the width of the '0' character, approximating character count */
+}
