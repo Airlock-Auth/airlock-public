@@ -87,7 +87,7 @@ Airlock is a mechanism to register a number into your own private database. You 
     - Open up 'Functions and Assets' and click on Services.
     - Build a new service.
     - Load the Supabase env vars into the twilio server side env vars:
-    - Import the 'got' dependency into the twilio console.
+    - Import the 'axios' dependency into the twilio console.
     - Add this for the code:
 
       ```javascript
