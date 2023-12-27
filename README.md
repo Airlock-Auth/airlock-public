@@ -58,25 +58,25 @@ Airlock is a mechanism to register a number into your own private database. You 
 
       ```sql
       -- Create the first table
-      CREATE TABLE table_one (
-        id SERIAL PRIMARY KEY,
-        created_at TIMESTAMPTZ DEFAULT now(),
-        phone_number TEXT,
-        email TEXT,
-        full_number_details JSONB,
-        region TEXT
-      );
+        CREATE TABLE numbers (
+          id SERIAL PRIMARY KEY,
+          created_at TIMESTAMPTZ DEFAULT now(),
+          phone_number TEXT,
+          email TEXT,
+          full_number_details JSONB,
+          region TEXT
+        );
       ```
 
       ```sql
       -- Create the second table
-      CREATE TABLE table_two (
-        id BIGSERIAL PRIMARY KEY,
-        created_at TIMESTAMPTZ DEFAULT now(),
-        from TEXT,
-        body TEXT,
-        to TEXT
-      );
+        CREATE TABLE messages (
+          id BIGSERIAL PRIMARY KEY,
+          created_at TIMESTAMPTZ DEFAULT now(),
+          "from" TEXT, 
+          body TEXT,
+          "to" TEXT
+        );
       ```
 
     - Add Supabase environment variables into `.env.local`.
