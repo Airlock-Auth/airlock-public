@@ -14,6 +14,10 @@ Airlock is a Next JS project by Rory Garton-Smith. Airlock provides a method of 
 
 This repo allows you to build your own version of Airlock and self-host.
 
+#### Security Warning:
+
+If you decide to move your self hosted onto an actual public URL, please re-do the architecture to make your Supabase calls via a server, or, make sure you enable RLS, otherwise your entire database will be publicly readable.
+
 #### Why?
 
 A major issue in the opsec world is that banks and some government services still use SMS based 2-factor authentication in favor of the more modern app-based 2FA. Reasons why this is an issue:
