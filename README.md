@@ -12,8 +12,7 @@
 
 Airlock is a Next JS project by Rory Garton-Smith. Airlock provides a method of securing yourself against 2FA SMS security limitations.
 
-This is the public build of the Airlock project. Please see airlock.fm for the commercial build.
-This repo allows you to build your own version of Airlock and self-host. If you'd rather not go through the trouble, just make an account at Airlock.Fm
+This repo allows you to build your own version of Airlock and self-host.
 
 #### Why?
 
